@@ -15,8 +15,7 @@ const server = http.createServer((req, res) => {
   }
 });
 
-console.log("address: ", server.address().address);
-
 server.listen(PORT, () => {
   console.log("Server running");
+  console.log("address: ", server.address());
 });
